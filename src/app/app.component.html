@@ -1,0 +1,15 @@
+<app-header (eventEmitter)="onEventHandled($event)"></app-header>
+<div class="container">
+
+  <!--
+<app-recipes *ngIf="itemType==='recipe'"></app-recipes>
+<app-shopping-list *ngIf="itemType !=='recipe'" ></app-shopping-list>
+-->
+
+  <router-outlet></router-outlet>
+
+
+</div>
+
+
+

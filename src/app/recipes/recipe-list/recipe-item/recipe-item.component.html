@@ -1,0 +1,16 @@
+<a style="cursor: pointer;margin: 10px;"
+   routerLinkActive="active"
+   [routerLink]="Index"
+   class="list-group-item clearfix"
+   (click)= "viewClickedRecipe()"
+>
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{recipeData.name}}</h4>
+    <p class="list-group-item-text">{{recipeData.description}}</p>
+  </div>
+
+  <span class="pull-right">
+        <img [src]="recipeData.imagePath" alt="{{recipeData.name}}" style="max-height: 60px;">
+      </span>
+
+</a>
